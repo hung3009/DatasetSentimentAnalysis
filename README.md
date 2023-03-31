@@ -17,6 +17,7 @@
 import pandas as pd
 
 #tải  tập dữ liệu ,chuyển đổi thành các giá trị số tương ứng, ví dụ 1 cho "positive" và 0 cho "negative" của cột sentiment
+
 data = pd.read_csv('https://raw.githubusercontent.com/hung3009/DatasetSentimentAnalysis/main/IMDB_Dataset.csv', encoding='unicode_escape')
 data['sentiment'] = data['sentiment'].replace(['positive', 'negative'], [1, 0])
 
